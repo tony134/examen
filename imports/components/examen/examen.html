@@ -1,0 +1,17 @@
+<div class="card-panel teal white-text">
+	<header>
+		<h3>Examen Antonio Robles</h3>
+	</header>
+	<p>Filas: <input type="number" ng-model="$ctrl.fila"></p>
+	<p>Columnas: <input type="number" ng-model="$ctrl.col"></p>
+	 <p>
+      <input type="checkbox" id="botones"  ng-model="$ctrl.botonEs"/>
+      <label for="botones">botones</label>
+    </p>
+	<button class="btn" ng-click="$ctrl.tabla()">Insertar</button>
+	<table class="bordered">
+		<tr ng-repeat="cr in $ctrl.dts track by $index">
+			<td ng-repeat="cs in cr track by $index"><button class="btn">{{cs}}</button></td>
+		</tr>
+	</table>
+</div>

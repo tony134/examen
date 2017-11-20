@@ -1,0 +1,21 @@
+<div class="row">
+			<div class="col s12 m10 l8 offset-m1 offset-l2 card-panel">
+				<h4>Examen</h4>
+				<p>Filas: <input type="text" ng-model="$ctrl.fil"></p> 
+				<p>Columnas: <input type="text" ng-model="$ctrl.col"></p> 
+
+				<div class="center">
+	<button class="waves-effect waves-light btn cyan black-text" ng-click="$ctrl.addnew()">Dibujar tabla</button>
+</div>
+
+<table class="bordered highlight">
+		<tr ng-repeat="fil in tabla">
+    <td ng-repeat="col in tabla"></td>  
+  </tr>
+</table>
+	</table>
+				
+			</div>
+		</div>
+
+	</div>

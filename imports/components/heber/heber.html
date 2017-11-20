@@ -1,0 +1,56 @@
+<!--    Tipos de Input    -->
+<div class="row">
+    <div class="col s12 m8 l6 offset-m2 offset-l3 card-panel">
+
+        <p>Filas: <input type="number" ng-model="$ctrl.fila"></p>
+        <p>Columnas:<input type="number" ng-model="$ctrl.col"> </p>
+        <button ng-click="$ctrl.tabla()" class="btn black">Crear tabla</button>
+        <table class="bordered">
+            <tr ng-repeat="cr in $ctrl.dts track by $index">
+                <td ng-repeat="cs in cr track by $index">{{cs}} </td>
+
+            </tr>
+
+            <!-- </table>
+        <h3>Formulario</h3>
+        <p>E-mail: <input type="email" ng-model="email"></p>
+        <p>
+            Edad: <input type="radio" name="age" value="Menos de 18 años" id="rad1" ng-model="age"><label for="rad1">Menos de 18 años</label>
+            <input type="radio" name="age" value="18-35 años" id="rad2" ng-model="age"><label for="rad2">18-35 años</label>
+            <input type="radio" name="age" value="36-65 años" id="rad3" ng-model="age"><label for="rad3">36-65 años</label>
+            <input type="radio" name="age" value="Más de 65 años" id="rad4" ng-model="age"><label for="rad4">Más de 65 años</label>
+        </p>
+        <p>
+            <input type="checkbox" id="checkSubscribe" ng-model="checkSubscribe"><label for="checkSubscribe">Deseo subscribirme y recibir ofertas de la página</label>
+        </p>
+
+
+        <p>Selecciona que película consideras la mejor: <select id="pel" name="pel" ng-model="mejor"> 
+                <option value="IT">IT</option> 
+                <option value="STAR WARS">Rey León</option>
+                <option value="LOTR">Tarzán</option>
+                <option value="MATRIZ">Avengers</option>
+                <option value="MAD MAX">Frozen</option>
+            
+            </select>
+        </p>
+
+
+        <button ng-click="btnClick()" class="btn black">Añadir</button>
+    </div>
+
+    <table class="bordered highlight">
+        <tr>
+            <th>E-mail</th>
+            <th>Edad</th>
+            <th>Subscrito</th>
+            <th>Mejor película</th>
+        </tr>
+        <tr ng-repeat="y in addObject">
+            <td>{{y.email}}</td>
+            <td>{{y.edad}}</td>
+            <td>{{y.subscribed}}</td>
+            <td>{{y.lamejor}}</td>
+        </tr>
+    </table> -->
+    </div>
